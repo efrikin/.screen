@@ -1,0 +1,20 @@
+autodetach on
+altscreen on
+
+startup_message off
+bell_msg ''
+vbell off
+defutf8 on
+defencoding utf8
+termcapinfo xterm* ti@:te@
+termcapinfo xterm-color ti@:te@
+
+defscrollback 99999
+
+# Statusline
+hardstatus on
+caption always "[%{gk}%d/%m/%Y] [%c] [$USER@%H]%{r} |||%{gk} %-w%{kW}%n %t%{-}%{-u}%+w"
+
+# Fix Ctrl + a
+# escape ^A^A
+# bind o other

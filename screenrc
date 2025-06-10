@@ -6,15 +6,13 @@ bell_msg ''
 vbell off
 defutf8 on
 defencoding utf8
+truecolor on
 termcapinfo xterm* ti@:te@
 termcapinfo xterm-color ti@:te@
 
 defscrollback 99999
 
 # Statusline
-hardstatus on
-caption always "[%{gk}%d/%m/%Y] [%c] [$USER@%H]%{r} |||%{gk} %-w%{kW}%n %t%{-}%{-u}%+w"
+hardstatus alwayslastline
+hardstatus string '[ %d/%m/%Y | %c%A ] ||%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-= %{KG}'
 
-# Fix Ctrl + a
-# escape ^A^A
-# bind o other
